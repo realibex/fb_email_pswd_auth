@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127125259030",
+    "project_id": "fir-email-pswd-auth",
+    "storage_bucket": "fir-email-pswd-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127125259030:android:12765816e1226824f78637",
+        "android_client_info": {
+          "package_name": "com.example.fb_email_pswd_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127125259030-mmjdl0pkge45l61f4ho3nde85thahj4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaJsagJPySUCqJhzhz1p-mwH9-ujgpfNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127125259030-mmjdl0pkge45l61f4ho3nde85thahj4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -42,6 +42,30 @@ class MainActivity : AppCompatActivity() {
         }
 
         val loginBtn = findViewById<Button>(R.id.loginBtn)
+        loginBtn.setOnClickListener {
+            val email = findViewById<EditText>(R.id.emailArea)
+            val pswd = findViewById<EditText>(R.id.pswdArea)
+
+            auth.signInWithEmailAndPassword(email.text.toString(), pswd.text.toString())
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        Log.d("MAIN", "signInWithEmail:success")
+                        val user = auth.currentUser
+
+                    } else {
+                        Log.d("MAIN", "signInWithEmail:failure", task.exception)
+                        Toast.makeText(baseContext, "Authentication failed.",
+                            Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+        }
+
+        val logoutBtn = findViewById<Button>(R.id.logoutBtn)
+        logoutBtn.setOnClickListener {
+            Firebase.auth.signOut()
+            Toast.makeText(this, "LogOut",Toast.LENGTH_LONG).show()
+        }
 
     }
 }
